@@ -35,6 +35,11 @@ body {
 .navbar {
   z-index: 5;
 }
+.navbg {
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #024438;
   font-size: 20px;
@@ -66,21 +71,22 @@ body {
 }
 /* banner part css start  */
 #banner {
+  height: 100vh;
   padding-top: 200px;
   padding-bottom: 500px;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../images/banner.png);
 }
 
-#banner .banner-text h2 {
+.banner-text h2 {
   color: #024438;
 }
-#banner .banner-text p {
+.banner-text p {
   color: #5e746f;
 }
-#banner .banner-text .btn {
+.banner-text .btn {
   height: 70px;
   width: 250px;
   background-color: #22b18b;
@@ -158,8 +164,322 @@ body {
   color: #5e746f;
 }
 .wheat-cat-litter-btn .btn {
-  width: 200px;
-  height: 60px;
+  width: 220px;
+  height: 70px;
+  background-color: #22b18b;
+}
+
+/* Growth-History part css */
+#growth-history {
+  padding: 100px 0;
+}
+.left-flower-img {
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.right-leaves-img {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.growth-history-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 35px 0px #00000014;
+}
+.growth-history-item h4 {
+  color: #137861;
+  font-size: 40px;
+}
+.growth-history-item p {
+  color: #024438;
+  font-size: 24px;
+}
+.growth-history-text h3 {
+  color: #024438;
+  font-size: 47px;
+}
+.growth-history-text p {
+  color: #5e746f;
+  font-size: 19px;
+  line-height: 36px;
+}
+.growth-history-text .btn {
+  width: 220px;
+  height: 70px;
+  font-size: 19px;
+  background-color: #22b18b;
+}
+.growth-history-content::after {
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  background-color: #45bd92;
+}
+.growth-history-item {
+  width: 330px;
+  height: 340px;
+  border-radius: 8px;
+  transition: all linear 0.2s;
+}
+.growth-history-item::after {
+  top: 50%;
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background-color: #2b9e79;
+  border: 11px solid #ffffff;
+  box-shadow: 0px 2px 17px 0px #00000014;
+}
+.products-exported {
+  margin-bottom: 55px;
+}
+.wheat-cat-litter-v2 {
+  margin-top: 200px;
+  margin-bottom: 55px;
+}
+.products-exported::after {
+  z-index: 1;
+  right: -69px;
+}
+.wheat-cat-litter-v1::after {
+  z-index: 1;
+  right: -69px;
+}
+.wheat-cat-litter-v2::after {
+  left: -67px;
+  z-index: 1;
+}
+.company-registration::after {
+  left: -67px;
+  z-index: 1;
+}
+.growth-history-item:hover {
+  background-color: #59e1c2;
+}
+
+/* our-History part */
+#our-story {
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/our-storya.png); */
+}
+.story-bottom-img {
+  left: 0;
+  bottom: 0;
+}
+.story-bottom-img2 {
+  right: 0;
+}
+.our-story-text h3 {
+  color: #024438;
+  font-size: 45px;
+}
+.our-story-text p {
+  color: #5e746f;
+  font-size: 19px;
+  line-height: 36px;
+}
+.our-story-text .btn {
+  width: 220px;
+  height: 70px;
+  font-size: 19px;
+  background-color: #22b18b;
+}
+/* about page part  */
+#about-our-story {
+  padding-top: 100px;
+  padding-bottom: 500px;
+}
+.story-bottom-left-img {
+  left: 0;
+  bottom: 0;
+}
+.story-bottom-right-img {
+  right: 0;
+  bottom: 0;
+}
+.about-our-story-text {
+}
+.about-our-story-text h3 {
+  font-size: 47px;
+  color: #024438;
+}
+.about-our-story-text p {
+  color: #5e746f;
+  font-size: 19px;
+  line-height: 36px;
+}
+/* Our Sales Team part css  */
+#sales-team {
+  padding-top: 300px;
+  padding-bottom: 150px;
+}
+.sales-team-bird-img {
+  top: 180px;
+  left: 0;
+}
+.sales-team-header {
+  padding-bottom: 100px;
+}
+.sales-team-header h3 {
+  color: #00402e;
+  font-size: 56px;
+}
+.sales-team-item {
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 20px 0px #0000000f;
+}
+.sales-team-item h6 {
+  color: #5e746f;
+  font-size: 28px;
+}
+.sales-team-item h4 {
+  color: #215345;
+  font-size: 35px;
+}
+/* Privacy Policy part css  */
+#privacy-policy {
+  padding: 50px 0;
+}
+.side-img {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.privacy-policy-header h3 {
+  color: #024438;
+  font-size: 72px;
+}
+.privacy-policy-text {
+  position: relative;
+  z-index: 2;
+}
+.privacy-policy-text h3 {
+  color: #024438;
+  font-size: 47px;
+}
+.privacy-policy-text p {
+  color: #5e746f;
+  font-size: 19px;
+  line-height: 36px;
+}
+/* contact part css  */
+#contact {
+}
+.contact-img {
+  top: 100px;
+  left: 0;
+}
+.contact-text {
+}
+.contact-text h3 {
+  color: #00402e;
+  font-size: 56px;
+  margin-bottom: 150px;
+}
+.contact-box {
+  max-width: 800px;
+}
+.contact-box .form-control {
+  height: 120px;
+
+  font-size: 36px;
+  color: #00402e;
+  box-shadow: 0px 8px 81px 0px #00000014;
+}
+.contact-box .form-control::placeholder {
+  font-size: 36px;
+  color: #95b9b2;
+}
+.contact-box .btn {
+  top: 15px;
+  right: 15px;
+  height: 90px;
+  width: 250px;
+  font-size: 24px;
+  background-color: #22b18b;
+}
+/* footer part css  */
+#footer {
+  padding-top: 200px;
+  padding-bottom: 300px;
+}
+.footer-top-img {
+  top: 0;
+  right: 150px;
+}
+.footer-bottom-img {
+  left: 0;
+  bottom: 0;
+}
+.footer-menu ul li a {
+  color: #485d57;
+  font-size: 19px;
+}
+.footer-menu {
+  padding-bottom: 400px;
+}
+.footer-text small {
+  font-size: 20px;
+  color: #485d57;
+}
+/* Business Card part css  */
+#banner-iner-page {
+  height: 100vh;
+  padding-top: 200px;
+  padding-bottom: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/contact-banner.png);
+}
+#business-card {
+  padding: 100px 0;
+}
+.business-card-leaves {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.business-card-content {
+  padding-top: 200px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+  box-shadow: 0px 10px 100px 0px #0000000d;
+}
+.business-img {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.business-card-content h3 {
+  font-size: 47px;
+  color: #215345;
+}
+.business-card-content .form-control {
+  height: 90px;
+  font-size: 20px;
+  color: #215345;
+  border-color: #d4e8e4;
+}
+.business-card-content .form-control:focus {
+  box-shadow: 0px 3px 21px 0px #00000012;
+}
+.business-card-content .btn {
+  height: 85px;
+  font-size: 25px;
   background-color: #22b18b;
 }
 /* Small devices (landscape phones, 576px and up) */
