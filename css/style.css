@@ -23,9 +23,20 @@ a {
 a:hover {
   text-decoration: none;
 }
+.z-index-down {
+  z-index: -2;
+}
 @font-face {
   font-family: Microsoft-Sans-Regular;
   src: url(../fonts/Microsoft\ Sans\ Serif\ Regular\ font.ttf);
+}
+@font-face {
+  font-family: Arial_regular;
+  src: url(../fonts/ARIAL.TTF);
+}
+@font-face {
+  font-family: Arial_Black;
+  src: url(../fonts/Arial_Black.ttf);
 }
 body {
   font-weight: 400;
@@ -509,6 +520,55 @@ body {
   font-size: 45px;
   transform: translate(-50%, -50%);
 }
+.product-bg-color {
+  background-color: #e7e7e7;
+}
+#product-cron {
+}
+.product-cron-header {
+  padding-bottom: 150px;
+}
+.product-cron-header h3 {
+  font-family: Arial_Black;
+  letter-spacing: 5px;
+  margin-bottom: 150px;
+  color: #333333;
+}
+
+.product-cron-header h3 span {
+  color: #f79604;
+}
+.product-cron-header p {
+  font-size: 25px;
+  position: relative;
+  font-family: Arial_regular;
+}
+.product-cron-header p::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 2px;
+  position: absolute;
+  background-color: #333333;
+}
+.product-cron-header p::before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  content: "";
+  height: 2px;
+  position: absolute;
+  background-color: #333333;
+}
+.product-img {
+  margin-bottom: 100px;
+}
+.product-content-item h2 {
+  font-size: 32px;
+  margin-top: 25px;
+  font-family: Arial_Black;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767.98px) {
   .mb-100 {
@@ -925,6 +985,9 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
   }
+  .product-content-item h2 {
+    font-size: 22px;
+  }
 }
 
 /* Large devices (laptop, 992px and up) */
@@ -1041,6 +1104,9 @@ body {
   .sales-team-item h6 {
     font-size: 25px;
   }
+  .product-content-item h2 {
+    font-size: 28px;
+  }
 }
 
 /* Large devices (laptop, 992px and up) */
@@ -1069,6 +1135,9 @@ body {
   .contact-img {
     top: 0px;
     left: 0;
+  }
+  .product-content-item h2 {
+    font-size: 28px;
   }
   .footer-menu {
     padding-bottom: 300px;
