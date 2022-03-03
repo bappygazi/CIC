@@ -23,8 +23,11 @@ a {
 a:hover {
   text-decoration: none;
 }
+.z-index-up {
+  z-index: 2 !important;
+}
 .z-index-down {
-  z-index: -2;
+  z-index: -1 !important;
 }
 @font-face {
   font-family: Microsoft-Sans-Regular;
@@ -446,6 +449,7 @@ body {
   bottom: 0;
   z-index: -1;
 }
+
 .footer-menu ul li a {
   color: #485d57;
   font-size: 19px;
@@ -522,8 +526,7 @@ body {
 .product-bg-color {
   background-color: #e7e7e7;
 }
-#product-cron {
-}
+
 .product-cron-header {
   padding-bottom: 150px;
 }
@@ -531,7 +534,7 @@ body {
   font-family: Arial_Black;
   letter-spacing: 5px;
   margin-bottom: 150px;
-  color: #333333;
+  color: #215345;
 }
 
 .product-cron-header h3 span {
@@ -539,6 +542,7 @@ body {
 }
 .product-cron-header p {
   font-size: 25px;
+  color: #215345;
   position: relative;
   font-family: Arial_regular;
 }
@@ -549,7 +553,7 @@ body {
   content: "";
   height: 2px;
   position: absolute;
-  background-color: #333333;
+  background-color: #215345;
 }
 .product-cron-header p::before {
   left: 0;
@@ -558,7 +562,7 @@ body {
   content: "";
   height: 2px;
   position: absolute;
-  background-color: #333333;
+  background-color: #215345;
 }
 .product-img {
   margin-bottom: 100px;
@@ -566,6 +570,7 @@ body {
 .product-content-item h2 {
   font-size: 32px;
   margin-top: 25px;
+  color: #215345;
   font-family: Arial_Black;
 }
 /* Small devices (landscape phones, 576px and up) */
